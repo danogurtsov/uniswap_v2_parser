@@ -1,8 +1,8 @@
 from .basics import *
 
-data_append_frequency = 200 # elements
 
 def main():
+
     # check already loaded pairs
     already_loaded = load_file(pairs_stores_path)
     loaded_nums = already_loaded.keys()

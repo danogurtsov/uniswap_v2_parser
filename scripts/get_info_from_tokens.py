@@ -1,11 +1,12 @@
 from .basics import *
 
-data_append_frequency = 100
-etherscan_frequency = 5 # per sec
-with open('./build/interfaces/IERC20.json') as json_file:
-    token_abi = json.load(json_file)['abi']
 
 def main():
+
+	# load interface
+	with open('./build/interfaces/IERC20.json') as json_file:
+    	token_abi = json.load(json_file)['abi']
+
 	# tokens loaded from etherscan
 	already_loaded = load_file(tokens_stores_path)
 	loaded_tokens = already_loaded.keys()

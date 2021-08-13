@@ -1,10 +1,12 @@
 from .basics import *
 
-data_append_frequency = 100
-with open('./build/interfaces/UniswapV2Pair.json') as json_file:
-    unipair_abi = json.load(json_file)['abi']
 
 def main():
+    
+    # load interface
+    with open('./build/interfaces/UniswapV2Pair.json') as json_file:
+        unipair_abi = json.load(json_file)['abi']
+
     # check already loaded pairs
     already_loaded = load_file(pairs_info_path)
     loaded_pairs = already_loaded.keys()

@@ -5,7 +5,7 @@
 # How to run:
 
 - indicate your Endpoint to Mainnet, indicate your Etherscan API key inside "basics.py"
-- run scripts separately as brownie scripts or python scripts
+- run scripts separately as either brownie scripts or python scripts
 
 # Requirements:
 
@@ -15,4 +15,4 @@ Python:
 - json
 - requests
 - time
-- web3 / Web3
+- web3 / Web3 
